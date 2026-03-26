@@ -1,93 +1,46 @@
-[13/03, 9:16 pm] Arpita Hatkar: # Declare variables with different data types
+# --- Program to demonstrate Python logical operators ---
 
-# Integer variable
-# Integers are whole numbers
-integer_var = 10
-
-# Float variable
-# Floats are numbers with decimal points
-float_var = 20.5
-
-# String variable
-# Strings are sequences of characters, enclosed in quotes
-string_var = "Hello, Python!"
-
-# Boolean variable
-# Booleans represent True or False values
-boolean_var = True
-
-# List variable
-# Lists are ordered collections of items
-list_var = [1, 2, 3, "four", 5.0]
-
-# Tuple variable
-# Tuples are ordered, immutable collections of items
-tuple_var = (10, 20, 30, "forty")
-
-# Dictionary variable
-# Dictionaries are collections of key-value pairs
-dict_var = {"name": "Alice", "age": 30}
-
-
-# Display variables and their types
-
-print(f"Variable: {integer_var}, Type: {type(integer_var)}")
-print(f"Variable: {float_var}, Type: {type(float_var)}")
-print(f"Variable: {string_var}, Type: {type(string_var)}")
-print(f"Variable: {boolean_var}, Type: {type(boolean_var)}")
-print(f"Variable: {list_var}, Type: {type(list_var)}")
-print(f"Variable: {tuple_var}, Type: {type(tuple_var)}")
-print(f"Variable: {dict_var}, Type: {type(dict_var)}")
-[13/03, 9:26 pm] Arpita Hatkar: # --- Program to demonstrate Type Casting in Python ---
-
-# 1. Convert an integer to a float
-num_int = 10
-num_float = float(num_int) # Using the float() function
-
-print(f"Original Integer: {num_int} (Type: {type(num_int)})")
-print(f"Converted Float:  {num_float} (Type: {type(num_float)})")
-print("-" * 30)
-
-# 2. Convert a float to an integer (truncates the decimal part)
-num_float_2 = 5.7
-num_int_2 = int(num_float_2) # Using the int() function
-
-print(f"Original Float:  {num_float_2} (Type: {type(num_float_2)})")
-print(f"Converted Integer: {num_int_2} (Type: {type(num_int_2)})")
-print("-" * 30)
-
-# 3. Convert a string to an integer (must be a valid numeric string)
-num_str = "42"
-num_int_3 = int(num_str) # Using the int() function
-
-print(f"Original String: {num_str} (Type: {type(num_str)})")
-print(f"Converted Integer: {num_int_3} (Type: {type(num_int_3)})")
-print(f"Demonstrating math after conversion: {num_int_3 * 2}")
-print("-" * 30)
-
-# 4. Convert an integer to a string (useful for concatenation)
-num_int_4 = 99
-num_str_4 = str(num_int_4) # Using the str() function
-
-print(f"Original Integer: {num_int_4} (Type: {type(num_int_4)})")
-print(f"Converted String: {num_str_4} (Type: {type(num_str_4)})")
-print(f"Demonstrating concatenation: 'Value: ' + num_str_4")
-print("-" * 30)
-
-# 5. Convert a string to a float
-num_str_5 = "3.14159"
-num_float_5 = float(num_str_5) # Using the float() function
-
-print(f"Original String: {num_str_5} (Type: {type(num_str_5)})")
-print(f"Converted Float:  {num_float_5} (Type: {type(num_float_5)})")
-[13/03, 9:27 pm] Arpita Hatkar: # Variables for demonstration
+# 1. Variables for demonstration
+a = True
+b = False
 x = 10
-y = 0
-is_student = True
-has_discount_code = False
+y = 5
 
-# Example of logical 'and', 'or', and 'not' operators in action
-print(f"and: {x > 5 and x < 15}")          # True
-print(f"or: {x > 10 or y == 0}")           # True
-print(f"not: {not is_student}")            # False
-print(f"combo: {(is_student or has_discount_code) and True}") # True
+print(f"Initial variables: a = {a}, b = {b}, x = {x}, y = {y}\n")
+
+# 2. Demonstration of the 'and' operator
+print("--- AND Operator (returns True if both conditions are True) ---")
+# Example 1: Both conditions are True
+result_and_1 = (x > 0) and (y > 0) # 10 > 0 and 5 > 0
+print(f"(x > 0) and (y > 0): {result_and_1}") # Output: True
+
+# Example 2: One condition is False
+result_and_2 = (x > 0) and (y < 2) # 10 > 0 and 5 < 2 (False)
+print(f"(x > 0) and (y < 2): {result_and_2}") # Output: False
+
+# 3. Demonstration of the 'or' operator
+print("\n--- OR Operator (returns True if at least one condition is True) ---")
+# Example 1: One condition is True
+result_or_1 = (x < 5) or (y > 0) # 10 < 5 (False) or 5 > 0 (True)
+print(f"(x < 5) or (y > 0): {result_or_1}") # Output: True
+
+# Example 2: Both conditions are False
+result_or_2 = (x < 5) or (y < 2) # 10 < 5 (False) or 5 < 2 (False)
+print(f"(x < 5) or (y < 2): {result_or_2}") # Output: False
+
+# 4. Demonstration of the 'not' operator
+print("\n--- NOT Operator (reverses the result) ---")
+# Example 1: Reverses True to False
+result_not_1 = not a # not True
+print(f"not a: {result_not_1}") # Output: False
+
+# Example 2: Reverses False to True
+result_not_2 = not (x < 5) # not (10 < 5) -> not False
+print(f"not (x < 5): {result_not_2}") # Output: True
+
+# 5. Combining logical operators
+print("\n--- Combining Logical Operators ---")
+# Check if age (x=10) is between 5 and 15, and not an even number.
+# (10 > 5 and 10 < 15) and not (10 % 2 == 0) -> (True and True) and not (True) -> True and False -> False
+complex_result = (x > 5 and x < 15) and not (x % 2 == 0)
+print(f"Is x between 5 and 15 and not even?: {complex_result}") # Output: False
