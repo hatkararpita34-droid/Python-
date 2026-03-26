@@ -1,0 +1,12 @@
+user_input = input("Enter a character or number: ")
+
+# Check if it is a number using try-except for robust handling of floats and negatives
+try:
+    float(user_input)
+    print(f"'{user_input}' is a number.")
+except ValueError:
+    # If not a number, check if it's an alphabet
+    if user_input.isalpha():
+        print(f"'{user_input}' is a character/alphabet.")
+    else:
+        print(f"'{user_input}' is a special character or mixed string.")
