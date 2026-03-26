@@ -1,0 +1,14 @@
+def check_odd_even(number):
+    if (number % 2) == 0:
+        return f"{number} is an even number"
+    else:
+        return f"{number} is an odd number"
+
+# Example Usage:
+num_to_check = 17
+result = check_odd_even(num_to_check)
+print(result)
+
+num_to_check = 20
+result = check_odd_even(num_to_check)
+print(result)
