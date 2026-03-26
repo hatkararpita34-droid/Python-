@@ -1,0 +1,11 @@
+# Variables for demonstration
+x = 10
+y = 0
+is_student = True
+has_discount_code = False
+
+# Example of logical 'and', 'or', and 'not' operators in action
+print(f"and: {x > 5 and x < 15}")          # True
+print(f"or: {x > 10 or y == 0}")           # True
+print(f"not: {not is_student}")            # False
+print(f"combo: {(is_student or has_discount_code) and True}") # True
