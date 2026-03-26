@@ -1,0 +1,24 @@
+# Define variables of different data types
+var_integer = 10                  # int
+var_float = 10.5                  # float
+var_string = "Hello, world!"      # str
+var_boolean = True                # bool
+var_list = [1, 2, 3, "four"]      # list
+var_tuple = (1, 2, 3, "four")     # tuple
+var_dictionary = {"a": 1, "b": 2} # dict
+var_set = {1, 2, 3, 4}            # set
+
+# Function to determine and print the type of a variable
+def determine_data_type(variable):
+    data_type = type(variable).__name__
+    print(f"The variable '{variable}' is of type: {data_type}")
+
+# Determine and print the types
+determine_data_type(var_integer)
+determine_data_type(var_float)
+determine_data_type(var_string)
+determine_data_type(var_boolean)
+determine_data_type(var_list)
+determine_data_type(var_tuple)
+determine_data_type(var_dictionary)
+determine_data_type(var_set)
