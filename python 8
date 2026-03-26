@@ -1,0 +1,26 @@
+def find_greatest(num1, num2, num3):
+    """
+    Finds the greatest of three numbers using conditional statements.
+    """
+    if (num1 >= num2) and (num1 >= num3):
+        greatest = num1
+    elif (num2 >= num1) and (num2 >= num3):
+        greatest = num2
+    else:
+        greatest = num3
+    return greatest
+
+# --- Example Usage ---
+# Get user input for the three numbers
+try:
+    first_num = float(input("Enter the first number: "))
+    second_num = float(input("Enter the second number: "))
+    third_num = float(input("Enter the third number: "))
+
+    # Call the function and print the result
+    result = find_greatest(first_num, second_num, third_num)
+    print(f"The greatest number among {first_num}, {second_num}, and {third_num} is: {result}")
+
+except ValueError:
+    print("Invalid input. Please enter valid numbers.")
+
