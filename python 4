@@ -1,0 +1,13 @@
+# Create variables of different data types
+vars = {
+    "integer_var": 10,
+    "float_var": 3.14,
+    "string_var": "Hello",
+    "bool_var": True,
+    "list_var": [1, 2],
+    "dict_var": {"a": 1}
+}
+
+# Display the type of each variable
+for name, value in vars.items():
+    print(f"{name}: {type(value).__name__}")
