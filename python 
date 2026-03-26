@@ -1,0 +1,93 @@
+[13/03, 9:16 pm] Arpita Hatkar: # Declare variables with different data types
+
+# Integer variable
+# Integers are whole numbers
+integer_var = 10
+
+# Float variable
+# Floats are numbers with decimal points
+float_var = 20.5
+
+# String variable
+# Strings are sequences of characters, enclosed in quotes
+string_var = "Hello, Python!"
+
+# Boolean variable
+# Booleans represent True or False values
+boolean_var = True
+
+# List variable
+# Lists are ordered collections of items
+list_var = [1, 2, 3, "four", 5.0]
+
+# Tuple variable
+# Tuples are ordered, immutable collections of items
+tuple_var = (10, 20, 30, "forty")
+
+# Dictionary variable
+# Dictionaries are collections of key-value pairs
+dict_var = {"name": "Alice", "age": 30}
+
+
+# Display variables and their types
+
+print(f"Variable: {integer_var}, Type: {type(integer_var)}")
+print(f"Variable: {float_var}, Type: {type(float_var)}")
+print(f"Variable: {string_var}, Type: {type(string_var)}")
+print(f"Variable: {boolean_var}, Type: {type(boolean_var)}")
+print(f"Variable: {list_var}, Type: {type(list_var)}")
+print(f"Variable: {tuple_var}, Type: {type(tuple_var)}")
+print(f"Variable: {dict_var}, Type: {type(dict_var)}")
+[13/03, 9:26 pm] Arpita Hatkar: # --- Program to demonstrate Type Casting in Python ---
+
+# 1. Convert an integer to a float
+num_int = 10
+num_float = float(num_int) # Using the float() function
+
+print(f"Original Integer: {num_int} (Type: {type(num_int)})")
+print(f"Converted Float:  {num_float} (Type: {type(num_float)})")
+print("-" * 30)
+
+# 2. Convert a float to an integer (truncates the decimal part)
+num_float_2 = 5.7
+num_int_2 = int(num_float_2) # Using the int() function
+
+print(f"Original Float:  {num_float_2} (Type: {type(num_float_2)})")
+print(f"Converted Integer: {num_int_2} (Type: {type(num_int_2)})")
+print("-" * 30)
+
+# 3. Convert a string to an integer (must be a valid numeric string)
+num_str = "42"
+num_int_3 = int(num_str) # Using the int() function
+
+print(f"Original String: {num_str} (Type: {type(num_str)})")
+print(f"Converted Integer: {num_int_3} (Type: {type(num_int_3)})")
+print(f"Demonstrating math after conversion: {num_int_3 * 2}")
+print("-" * 30)
+
+# 4. Convert an integer to a string (useful for concatenation)
+num_int_4 = 99
+num_str_4 = str(num_int_4) # Using the str() function
+
+print(f"Original Integer: {num_int_4} (Type: {type(num_int_4)})")
+print(f"Converted String: {num_str_4} (Type: {type(num_str_4)})")
+print(f"Demonstrating concatenation: 'Value: ' + num_str_4")
+print("-" * 30)
+
+# 5. Convert a string to a float
+num_str_5 = "3.14159"
+num_float_5 = float(num_str_5) # Using the float() function
+
+print(f"Original String: {num_str_5} (Type: {type(num_str_5)})")
+print(f"Converted Float:  {num_float_5} (Type: {type(num_float_5)})")
+[13/03, 9:27 pm] Arpita Hatkar: # Variables for demonstration
+x = 10
+y = 0
+is_student = True
+has_discount_code = False
+
+# Example of logical 'and', 'or', and 'not' operators in action
+print(f"and: {x > 5 and x < 15}")          # True
+print(f"or: {x > 10 or y == 0}")           # True
+print(f"not: {not is_student}")            # False
+print(f"combo: {(is_student or has_discount_code) and True}") # True
