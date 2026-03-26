@@ -1,0 +1,63 @@
+# --- Type Casting Demonstration in Python ---
+
+# 1. Casting a float to an integer (truncates the decimal part)
+float_num = 15.8
+# The int() function converts a float to an integer [1].
+int_num = int(float_num) 
+print(f"1. Float {float_num} cast to integer: {int_num}, type: {type(int_num)}")
+
+
+# 2. Casting an integer to a float
+int_val = 100
+# The float() function converts an integer to a float [2].
+float_val = float(int_val)
+print(f"2. Integer {int_val} cast to float: {float_val}, type: {type(float_val)}")
+
+
+# 3. Casting an integer to a string
+count = 42
+# The str() function converts any value to a string [1].
+str_count = str(count)
+print(f"3. Integer {count} cast to string: '{str_count}', type: {type(str_count)}")
+
+
+# 4. Casting a string of digits to an integer
+price_str = "199"
+# The int() function can convert a string containing only digits to an integer [1].
+price_int = int(price_str)
+print(f"4. String '{price_str}' cast to integer: {price_int}, type: {type(price_int)}")
+
+
+# 5. Casting a string to a float
+gpa_str = "3.85"
+# The float() function can convert a string containing a valid float representation to a float [2].
+gpa_float = float(gpa_str)
+print(f"5. String '{gpa_str}' cast to float: {gpa_float}, type: {type(gpa_float)}")
+
+
+# 6. Casting a list to a tuple
+my_list = [1, 2, 3, 4]
+# The tuple() function converts an iterable (like a list) into a tuple [3].
+my_tuple = tuple(my_list)
+print(f"6. List {my_list} cast to tuple: {my_tuple}, type: {type(my_tuple)}")
+
+
+# 7. Casting a tuple to a list
+my_tuple_2 = (5, 6, 7)
+# The list() function converts an iterable (like a tuple) into a list [3].
+my_list_2 = list(my_tuple_2)
+print(f"7. Tuple {my_tuple_2} cast to list: {my_list_2}, type: {type(my_list_2)}")
+
+
+# 8. Casting a string to a list of characters
+word = "hello"
+# The list() function breaks a string into a list of individual characters [3].
+char_list = list(word)
+print(f"8. String '{word}' cast to list of characters: {char_list}, type: {type(char_list)}")
+
+# 9. Casting a float (or int) to a boolean
+# Non-zero numbers are True, zero is False [4].
+bool_true = bool(10)
+bool_false = bool(0.0)
+print(f"9. Integer 10 cast to boolean: {bool_true}, type: {type(bool_true)}")
+print(f"   Float 0.0 cast to boolean: {bool_false}, type: {type(bool_false)}")
