@@ -1,0 +1,7 @@
+# User inputs a string
+my_string = input("Enter a string: ")
+
+# Calculate length using len()
+length = len(my_string)
+
+print(f"The length of the string is: {length}")
