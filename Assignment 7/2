@@ -1,0 +1,25 @@
+# Initialize a sample tuple
+fruits = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+
+# 1. Indexing (starts from 0)
+print(f"First element: {fruits[0]}")
+print(f"Third element: {fruits[2]}")
+
+# 2. Negative Indexing (starts from -1 at the end)
+print(f"Last element: {fruits[-1]}")
+print(f"Second-to-last element: {fruits[-2]}")
+
+# 3. Slicing [start:stop:step]
+# Returns elements from index 2 up to, but NOT including, index 5
+print(f"Slice (index 2 to 4): {fruits[2:5]}")
+
+# Slice from the start to index 3
+print(f"Slice (start to 3): {fruits[:4]}")
+
+# Slice with a step (every 2nd element)
+print(f"Alternate elements: {fruits[::2]}")
+
+# 4. Iteration
+print("\nIterating through the tuple:")
+for fruit in fruits:
+    print(f"- {fruit}")
