@@ -1,0 +1,33 @@
+# 1. Create a sample tuple
+my_tuple = ("Python", "Java", "C++", "Ruby")
+print("Original tuple:", my_tuple)
+
+# 2. Demonstrate Immutability
+# Attempting to change an element will raise a TypeError
+try:
+    print("\nAttempting to change the second element to 'C#'...")
+    my_tuple[1] = "C#"
+except TypeError as e:
+    print(f"Error: {e}")
+    print("Verification: Tuples are immutable and do not support item assignment.")
+
+# 3. Demonstrate Item Deletion Restriction
+# Attempting to delete a specific item will raise a TypeError
+try:
+    print("\nAttempting to delete the first element using 'del my_tuple[0]'...")
+    del my_tuple[0]
+except TypeError as e:
+    print(f"Error: {e}")
+    print("Verification: Individual tuple elements cannot be deleted.")
+
+# 4. Demonstrate Tuple Deletion using 'del'
+# You can delete the entire tuple variable from memory
+print("\nDeleting the entire tuple using 'del my_tuple'...")
+del my_tuple
+
+# Attempting to access the tuple after deletion will raise a NameError
+try:
+    print(my_tuple)
+except NameError as e:
+    print(f"Error: {e}")
+    print("Verification: The tuple 'my_tuple' no longer exists in memory.")
