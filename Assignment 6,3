@@ -1,0 +1,30 @@
+# Initialize a starting list
+fruits = ["apple", "banana", "cherry"]
+print("Initial list:", fruits)
+
+# 1. APPEND: Add an element to the end of the list
+fruits.append("date")
+print("After append:", fruits)
+
+# 2. INSERT: Add an element at a specific index (e.g., index 1)
+# Syntax: list.insert(index, element)
+fruits.insert(1, "blueberry")
+print("After insert at index 1:", fruits)
+
+# 3. UPDATE: Change an existing element by accessing its index
+fruits[2] = "blackberry"  # Replacing 'banana' with 'blackberry'
+print("After update at index 2:", fruits)
+
+# 4. DELETE: Removing elements
+# Option A: remove() deletes the first occurrence of a specific value
+fruits.remove("cherry") 
+print("After removing 'cherry':", fruits)
+
+# Option B: pop() removes and returns an element at a specific index
+# If no index is provided, it removes the last item
+removed_item = fruits.pop(0) 
+print(f"After popping index 0 ('{removed_item}'):", fruits)
+
+# Option C: del keyword can also delete by index
+del fruits[-1]
+print("After deleting last item with del:", fruits)
