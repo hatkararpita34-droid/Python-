@@ -1,0 +1,32 @@
+# Sample list for demonstration
+data = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape"]
+
+# 1. POSITIVE INDEXING
+# Accesses elements starting from 0 (the beginning)
+first_item = data[0]        # "Apple"
+third_item = data[2]        # "Cherry"
+
+# 2. NEGATIVE INDEXING
+# Accesses elements starting from -1 (the end)
+last_item = data[-1]        # "Grape"
+second_last = data[-2]      # "Fig"
+
+# 3. LIST SLICING [start:stop:step]
+# Extracts a range of elements (stop index is exclusive)
+sub_list = data[1:4]        # Index 1, 2, 3 -> ["Banana", "Cherry", "Date"]
+from_start = data[:3]       # First 3 items -> ["Apple", "Banana", "Cherry"]
+to_end = data[4:]           # Items from index 4 to end -> ["Elderberry", "Fig", "Grape"]
+
+# 4. SLICING WITH STEPS
+# Extracts elements at specific intervals
+every_second = data[::2]    # ["Apple", "Cherry", "Elderberry", "Grape"]
+
+# 5. REVERSING A LIST
+# Using a negative step to reverse the order
+reversed_data = data[::-1]  # ["Grape", "Fig", "Elderberry", "Date", "Cherry", "Banana", "Apple"]
+
+# Displaying Results
+print(f"Original List: {data}")
+print(f"Indexing (Pos/Neg): {first_item}, {last_item}")
+print(f"Slicing [1:4]: {sub_list}")
+print(f"Reversed List: {reversed_data}")
