@@ -1,0 +1,18 @@
+# A given sequence (e.g., a list of numbers)
+sequence = [45, 12, 89, 33, 7, 56]
+
+# 1. Using tuple() to convert the list into a tuple
+my_tuple = tuple(sequence)
+print("Tuple:", my_tuple)
+
+# 2. Using len() to find the total number of items
+length = len(my_tuple)
+print("Length of the tuple:", length)
+
+# 3. Using max() to find the largest value
+largest = max(my_tuple)
+print("Maximum value:", largest)
+
+# 4. Using min() to find the smallest value
+smallest = min(my_tuple)
+print("Minimum value:", smallest)
