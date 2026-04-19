@@ -1,0 +1,28 @@
+# --- Basic List Operations Demonstration ---
+
+# 1. Initialize Lists
+list1 = [10, 50, 30]
+list2 = [20, 40]
+print(f"List 1: {list1}")
+print(f"List 2: {list2}")
+print("-" * 30)
+
+# 2. Concatenation (+) - Merging two lists
+concatenated_list = list1 + list2
+print(f"Concatenated List (+): {concatenated_list}")
+
+# 3. Repetition (*) - Repeating a list multiple times
+repeated_list = list2 * 3
+print(f"Repeated List (*): {repeated_list}")
+
+# 4. Length (len()) - Number of elements in a list
+list_len = len(concatenated_list)
+print(f"Length of Concatenated List (len()): {list_len}")
+
+# 5. Maximum (max()) - Largest element in a list
+max_val = max(concatenated_list)
+print(f"Maximum Value (max()): {max_val}")
+
+# 6. Minimum (min()) - Smallest element in a list
+min_val = min(concatenated_list)
+print(f"Minimum Value (min()): {min_val}")
