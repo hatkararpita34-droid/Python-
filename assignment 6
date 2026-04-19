@@ -1,0 +1,25 @@
+# Create a list of fruits
+fruits_list = ["apple", "banana", "cherry", "mango"]
+
+# Define elements to check
+target_1 = "banana"
+target_2 = "orange"
+
+# 1. Demonstrate the 'in' operator
+# Returns True if the value exists in the list
+print(f"Is '{target_1}' in the list? {target_1 in fruits_list}")  # Output: True
+print(f"Is '{target_2}' in the list? {target_2 in fruits_list}")  # Output: False
+
+# 2. Demonstrate the 'not in' operator
+# Returns True if the value does NOT exist in the list
+print(f"Is '{target_1}' NOT in the list? {target_1 not in fruits_list}") # Output: False
+print(f"Is '{target_2}' NOT in the list? {target_2 not in fruits_list}") # Output: True
+
+# 3. Using membership operators in conditional 'if' statements
+if "apple" in fruits_list:
+    print("Success: Apple is available in the list.")
+else:
+    print("Failure: Apple is missing.")
+
+if "grapes" not in fruits_list:
+    print("Success: Grapes are correctly identified as missing.")
