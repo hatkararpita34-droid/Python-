@@ -1,0 +1,26 @@
+# 1. Creating Tuples
+# Tuples are created by placing items inside parentheses ()
+tuple1 = (1, 2, 3)
+tuple2 = ("Python", "Programming")
+
+# 2. Length Operation
+# The len() function returns the total number of items in the tuple
+print(f"Length of tuple1: {len(tuple1)}") 
+
+# 3. Concatenation Operation
+# The + operator joins two or more tuples to create a new one
+concatenated_tuple = tuple1 + tuple2
+print(f"Concatenated Tuple: {concatenated_tuple}")
+
+# 4. Repetition Operation
+# The * operator repeats the elements of a tuple a specified number of times
+repeated_tuple = tuple1 * 3
+print(f"Repeated Tuple (tuple1 * 3): {repeated_tuple}")
+
+# 5. Membership Operation
+# Use 'in' to check if an item exists and 'not in' to check if it does not
+is_present = 2 in tuple1
+is_absent = "Java" not in tuple2
+
+print(f"Is 2 in tuple1? {is_present}")
+print(f"Is 'Java' not in tuple2? {is_absent}")
